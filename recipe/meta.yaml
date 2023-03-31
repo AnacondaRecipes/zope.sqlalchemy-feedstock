@@ -12,6 +12,8 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation
+  # s390x missing transaction
+  skip: true  # [s390x or py<37]
 
 requirements:
   host:
