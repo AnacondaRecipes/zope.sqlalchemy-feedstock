@@ -17,6 +17,8 @@ requirements:
   host:
     - python
     - setuptools
+    - pip
+    - wheel
   run:
     - python
     - sqlalchemy >=0.5.1
