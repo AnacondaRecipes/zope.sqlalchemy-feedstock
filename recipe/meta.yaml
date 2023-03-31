@@ -26,6 +26,10 @@ requirements:
     - zope.interface >=3.6.0
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - zope
     - zope.sqlalchemy
